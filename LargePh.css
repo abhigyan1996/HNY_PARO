@@ -1298,6 +1298,17 @@ overflow: hidden;
 	color: white;
 }
 
+#msg7{
+	width:70%;
+	margin-left: 18.5vw;
+	margin-top: 10vh;
+	height:44vh;
+	position: absolute;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	padding-top: 2vh;
+	padding-bottom: 2vh;
+}
 
 @-webkit-keyframes typing {
   from { width: 0 }
