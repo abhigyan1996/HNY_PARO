@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+  <title>Angshuman Kashyap</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="stylesResponsive.css">
+<link rel="stylesheet" href="ResponsiveNormalPh.css">
+<link rel="stylesheet" href="LargePh.css">
+<!-- <link rel="stylesheet" href="LargeScreensRes.css"> -->
+<link rel="stylesheet" href="parallax.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+<script src="js/index1.js"></script>
+<script src="script2.js"></script>
+<script src="parallax.js"></script>
+<script src="scroll_stories.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700italic,700' rel='stylesheet' type='text/css'>
+  
+  
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+
+      <link rel="stylesheet" href="slider.css">
+  
+</head>
+
+<body class="w3-black">
+
+<audio id="myAudio">
+  <source src="hbdp.ogg" type="audio/ogg">
+  <source src="hbdp.mp3" type="audio/mpeg">
+</audio>
+
+
+<div class="w3-padding-large" id="main">
+<div onclick="playAudio()" class="w3-button w3-blue w3-hover-green" style="position: absolute; margin-top: 5vh; margin-left:25vw"> Click me Pari</div>
+  
+<img style="width:100%; height:62vh" src="images/hbdpari.jpg" alt="Happy Birthday">
+
+
+
+<!-- ABOUT ME SMALL SCREENS -->
+<div class="aboutMeDivPh w3-hide-large w3-hide-medium" style="margin-top: -10vh"> 
+  <div class="w3-center" id="aboutAngzPh">HAPPY BIRTHDAY</div>
+
+
+ <div id="descAboutPh">
+  <video style="width:100vw; margin-left: -5vw; margin-top: -10vh" controls>
+    <source src="video/paripari.mp4" type="video/mp4">
+    <source src="video/paripari.ogg" type="video/ogg">
+  </video>
+</div>
+<div id="scratchLine" style="margin-right:3vw"> Well, am I done yet? Jaan tumi eyat ahi pala buli moi janu</div>
+</div>
+
+<div>
+  <div class="parallax" style="margin-top: 62vh"></div>
+ <div id="strip3"> 
+  <div class="scratch-container" >
+  <div id="promo" class="scratchpad"></div>
+</div>
+<div class="promo-container" style="display:none;">
+  <div class="promo-code"></div>
+ </div>
+</div>
+</div>
+
+
+
+ </div>
+
+
+</body>
+
+
+
+
+
+<script>
+  AOS.init();
+</script>
+  
+  <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/requestAnimationFrame.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="https://jennamolby.com/scratch-and-win/js/wScratchPad.min.js"></script>
+ 
+<script type="text/javascript">
+ 
+var promoCode = '';
+var bg1 = 'images/ticket.png';
+var bg2 = 'images/ticket.png';
+var bg3 = 'images/ticket.png';
+var bgArray= [ bg1, bg2, bg3 ],
+selectBG = bgArray[Math.floor(Math.random() * bgArray.length)];
+if (selectBG == bg1) {
+    promoCode = 'SCRATCH400';
+  } else if (selectBG == bg2) {
+    promoCode = 'SCRATCH500';
+  } if (selectBG == bg3) {
+    var promoCode = '';
+  }
+$('#promo').wScratchPad({
+    // the size of the eraser
+    size        : 70,    
+    // the randomized scratch image   
+    bg:  selectBG,
+    // give real-time updates
+    realtime    : true, 
+    // The overlay image
+    fg: 'https://jennamolby.com/scratch-and-win/images/overlay.png',
+    // The cursor (coin) image
+    'cursor': 'url("https://jennamolby.com/scratch-and-win/images/coin1.png") 5 5, default',
+    
+    scratchMove: function (e, percent) {
+        // Show the plain-text promo code and call-to-action when the scratch area is 50% scratched
+        if ((percent > 50) && (promoCode != '')) {
+          $('.promo-container').show();
+          $('body').removeClass('not-selectable');
+          $('.promo-code').html('Your code is: ' + promoCode);
+        }
+      }
+ });
+</script>
+
+<script type="text/javascript">
+ $(document).ready(function(){
+  $("#i1").hide(); $("#i2").hide(); $("#i3").hide(); $("#i4").hide(); $("#i5").hide();
+  $("#l1").hide(); $("#l2").hide(); $("#l3").hide(); $("#l4").hide(); $("#l5").hide(); $("#l6").hide();
+  $("#o1").hide();
+  $("#v1").hide(); $("#v2").hide(); $("#v3").hide(); $("#v4").hide(); $("#v5").hide(); $("#v6").hide();
+  $("#e2").hide(); $("#e3").hide(); $("#e4").hide(); $("#e5").hide(); $("#e6").hide(); $("#e7").hide(); $("#e8").hide(); $("#e9").hide(); 
+  $("#y1").hide(); $("#y2").hide(); $("#y3").hide(); $("#y4").hide(); $("#y5").hide(); $("#y6").hide();
+  $("#o2").hide();
+  $("#u1").hide(); $("#u2").hide(); $("#u3").hide(); $("#u4").hide(); $("#u5").hide(); $("#u6").hide(); $("#u7").hide(); 
+
+    $("#abhiGifts").on("click", function(){
+          $("#i1").show(2000);
+          $("#i3").show(2000);
+          $("#i5").show(2000);
+          $("#l1").show(2000);
+          $("#l3").show(2000);
+          $("#l4").show(2000);
+          $("#o2").show(2000);
+          $("#v5").show(2000);
+          $("#v4").show(2000);
+          $("#v6").show(2000);
+          $("#e4").show(2000);
+          $("#e2").show(2000);
+          $("#e9").show(2000);
+          $("#e8").show(2000);
+          $("#e6").show(2000);
+          $("#y1").show(2000);
+          $("#y2").show(2000);
+          $("#y6").show(2000);
+          $("#u1").show(2000);
+          $("#u2").show(2000);
+          $("#u3").show(2000);
+          $("#u7").show(2000);
+    });
+
+    $("#parsGifts").on("click", function(){
+          $("#i2").show(2000);
+          $("#i4").show(2000);
+          $("#l2").show(2000);
+          $("#l5").show(2000);
+          $("#l6").show(2000);
+          $("#v2").show(2000);
+          $("#v1").show(2000); 
+          $("#v3").show(2000);
+          $("#e3").show(2000);
+          $("#e5").show(2000);
+          $("#e7").show(2000);
+          $("#y4").show(2000);
+          $("#y3").show(2000);
+          $("#y5").show(2000);
+          $("#o1").show(2000);
+          $("#u4").show(2000);
+          $("#u5").show(2000);
+          $("#u6").show(2000);
+       
+    });
+});
+</script>
+
+
+
+<script type="text/javascript">
+
+ $(document).ready(function(){
+    $("#msg1").show(2000); $("#msg2").hide(); $("#msg3").hide(); $("#msg4").hide(); $("#msg5").hide(); $("#msg6").hide(); $("#msg7").hide();
+       
+      $("#msg1").on("click", function(){
+          
+          $("#msg2").show(2000);
+          $("#msg1").hide(1000);
+    });
+    
+    $("#msg2").on("click", function(){
+          
+          $("#msg2").hide(1000);
+          $("#msg3").show(2000);
+    });
+
+    $("#msg3").on("click", function(){
+          
+          $("#msg4").show(2000);
+          $("#msg3").hide(1000);
+    }); 
+
+    $("#msg4").on("click", function(){
+          
+          $("#msg5").show(2000);
+          $("#msg4").hide(1000);
+    });
+
+    $("#msg5").on("click", function(){
+          
+          $("#msg6").show(2000);
+          $("#msg5").hide(1000);
+    });
+
+    $("#msg6").on("click", function(){
+          
+          $("#msg7").show(2000);
+          $("#msg6").hide(1000);
+    });     
+});
+</script>
+
+<script>
+var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+  x.play(); 
+} 
+ 
+</script>
+
+
+</html>
